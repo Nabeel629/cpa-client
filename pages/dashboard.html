@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <title>Login | CPA</title>
+</head>
+<body>
+    <canvas id="gradient-canvas" data-transition-in></canvas>
+    <main>
+        <h1>Dashboard</h1>
+
+        <form id="dashboard-form">
+            <div class="input-form-group">
+                <label for="site-input">Site</label>
+                <input type="url" name="site" id="site-input" />
+                <span class="error-message"></span>
+            </div>
+            <div class="input-form-group">
+                <label for="is-allowed-input">Is Allowed</label>
+                <select name="is-allowed" id="is-allowed-input">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+            <div class="input-form-group">
+                <label for="attack-type-input">Attack Type</label>
+                <select name="attack-type" id="attack-type-input">
+                    <option value="db">Database</option>
+                    <option value="corrupt">Corrupt</option>
+                    <option value="spy">Spy</option>
+                    <option value="ransom">Ransom</option>    
+                    <option value="freeze">Freeze</option>    
+                </select>
+                <span class="error-message"></span>
+            </div>
+
+            <button type="submit">Create</button>
+        </form>
+    </main>
+
+    <script src="/Gradient.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/dashboard.js"></script>
+</body>
+</html>

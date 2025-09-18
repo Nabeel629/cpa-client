@@ -1,0 +1,79 @@
+
+#gradient-canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #8205ff; 
+  --gradient-color-2: #eb8500; 
+  --gradient-color-3: #c00303;  
+  --gradient-color-4: #e12509;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid #fff;
+    border-bottom: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.input-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.input-form-group label {
+    font-weight: 500;
+    color: #fff;
+}
+
+.input-form-group input,
+.input-form-group select {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: transparent;
+}
+
+.input-form-group select option {
+    color: black;
+}
+
+form button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}
+
+form button:hover {
+    box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+}
