@@ -22,10 +22,11 @@ window.addEventListener("DOMContentLoaded", () => {
     const userToken = localStorage.getItem("token");
 
     if (isTokenExpired(userToken)) {
-      if (location.pathname === "/pages/login.html") return;
-      location.href = "/pages/login.html";
+      if (location.pathname === "/cpa-client/pages/login.html") return;
+      location.href = "/cpa-client/pages/login.html";
     } else {
-      if (location.pathname === "/pages/dashboard.html") return;
-      location.href = "/pages/dashboard.html";
+      if (location.pathname === "/cpa-client/pages/dashboard.html") return;
+      location.href = "/cpa-client/pages/dashboard.html";
     }
 });
+
