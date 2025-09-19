@@ -34,7 +34,7 @@ loginForm.addEventListener("submit", async (e) => {
 
     localStorage.setItem("token", data.token);
 
-    location.href = "/pages/dashboard.html";
+    location.href = "/cpa-client/pages/dashboard.html";
 });
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -42,4 +42,5 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Call `initGradient` with the selector to your canvas
     gradient.initGradient('#gradient-canvas');
+
 })
