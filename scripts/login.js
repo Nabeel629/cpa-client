@@ -34,7 +34,7 @@ loginForm.addEventListener("submit", async (e) => {
 
     localStorage.setItem("token", data.token);
 
-    location.href = "/cpa-client/pages/dashboard.html";
+    location.href = "../pages/dashboard.html";
 });
 
 window.addEventListener("DOMContentLoaded", () => {
